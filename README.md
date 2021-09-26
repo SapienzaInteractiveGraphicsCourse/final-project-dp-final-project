@@ -4,7 +4,6 @@
 <br />
 <p align="center">
   <a href="https://github.com/SapienzaInteractiveGraphicsCourse/final-project-dp-final-project">
-    <img alt="Mate" title="Mate" src="./labirinto.jpg" width="450">
   </a>
 </p>
 
