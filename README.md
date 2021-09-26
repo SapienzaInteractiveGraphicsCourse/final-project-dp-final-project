@@ -1,12 +1,5 @@
 # 🌳 Mate
 
-<br />
-<br />
-<p align="center">
-  <a href="https://github.com/SapienzaInteractiveGraphicsCourse/final-project-dp-final-project">
-  </a>
-</p>
-
 Final project for the course of Interactive Graphics 2020/2021.
 
 >Student: Davide Palleschi Mat: `1697259`;
@@ -25,7 +18,7 @@ Final project for the course of Interactive Graphics 2020/2021.
 
 -   report [Link 🔗](./Report.pdf)
 
-    In this file we write more about the code and the enviroment of our project.
+    In this file we write more about the code and the enviroment of my project.
 
 ## 🌐 Browsers
 
@@ -49,11 +42,5 @@ Final project for the course of Interactive Graphics 2020/2021.
 
 ### [Click here to play the game.](https://sapienzainteractivegraphicscourse.github.io/final-project-dp-final-project/)
 
-## 🙋 Info
-
-for any doubt or clarification contact me on:
-
--   palleschi.1697259@studenti.uniroma1.it
- 
 
 
