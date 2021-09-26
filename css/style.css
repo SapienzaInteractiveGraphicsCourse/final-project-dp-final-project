@@ -107,7 +107,7 @@ nav ul li button:hover {
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
   display: block;
-  background-color: #f1f1f11f;
+  background-color: #f1f1f100;
   width: 50px;
   height: 30px;
 
@@ -116,7 +116,7 @@ nav ul li button:hover {
 }
 
 .score-menu h2 {
-  color: rgba(0, 153, 255, 0.472);
+  color: rgba(0, 42, 70, 0.876);
   padding: 1px 20px;
   font-size: 20px;
   text-decoration: none;
@@ -125,7 +125,7 @@ nav ul li button:hover {
 
 .score-menu p {
   margin: 0 0px 0px 0px;
-  color: rgba(0, 110, 255, 0.445);
+  color: rgba(0, 26, 59, 0.897);
   padding: 1px 1px;
   text-decoration: none;
   display: block;
