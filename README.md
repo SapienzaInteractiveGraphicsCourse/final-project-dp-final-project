@@ -47,7 +47,7 @@ Final project for the course of Interactive Graphics 2020/2021.
 
 </details>
 
-### [Click here to play the game.](https://sapienzainteractivegraphicscourse.github.io/final-project-la_dl-team/)
+### [Click here to play the game.](https://sapienzainteractivegraphicscourse.github.io/final-project-dp-final-project/)
 
 ## 🙋 Info
 
