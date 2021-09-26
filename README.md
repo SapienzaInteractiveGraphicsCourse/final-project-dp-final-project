@@ -10,7 +10,7 @@ Final project for the course of Interactive Graphics 2020/2021.
 
     Is a lightweight, cross-browser, easy to use, general purpose 3D library that use a WebGL renderer.
 
--   **TWEEN.js** [Link 🔗](https://github.com/tweenjs/tween.js/) [[Documentation 🔗](https://createjs.com/docs/tweenjs/modules/TweenJS.html)]
+-   **TWEEN.js** [Link 🔗](https://github.com/tweenjs/tween.js/) [[Documentation 🔗](https://github.com/tweenjs/tween.js/blob/master/docs/user_guide.md)]
 
     Is a lightweight and simple tool for animations.
 
