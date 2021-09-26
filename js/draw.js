@@ -70,7 +70,7 @@ function drawBenches(LoadingManager, scene, benchesProperties) {
 function drawCubes(LoadingManager, scene) {
 
     const cubes = [];
-    for (let i=0; i<7; i++) {
+    for (let i=0; i<3; i++) {
         const color = Math.random()*0xdddddd
         const cubeProperties = {
             size: {width:Math.random()*4+2, height:Math.random()*4, depth:Math.random()*4+2},
