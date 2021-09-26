@@ -269,7 +269,7 @@ const lightsProperties = {
     },
     night: {
         color: 0xeefdff,
-        intensity: 0.3,
+        intensity: 0.6,
         position: sunProperties.position,
         shadows: {
             cast: true, 
