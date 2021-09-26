@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" href="./labirinto.jpg">
+    <head>
+		<meta charset="utf-8">
+		<title>Maze</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+    <body>
+        <nav id='Start_Menu'>
+            <ul>
+                <li>
+                    <button id='Play_Button' class='playbtn' onclick="StartPlay()">Play</button>
+                    <h2 id='gameStarted' hidden>false</h2>
+                </li>
+                <li>
+                    <div>
+                        <button id='Options_Button' class='optbtn' onclick="Options()">Options</button>
+                    </div>
+                </li>
+                <li>
+                    <div class='instructions'>
+                        <button id='Instructions_Button' class='instrbtn' onclick="Instructions()">Instructions</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav id='End_Menu'>
+            <ul>
+                <li>
+                    <button id='Restart_Button' class='rstrtbtn' onclick="StartPlay()">Explore</button>
+                    
+                </li>
+                <li>
+                    <button id='Options_Button' class='optbtn' onclick="Options()">Options</button>
+                </li>
+            </ul>
+        </nav>
+        <nav id='NextLevel_Menu'>
+            <ul>
+                <li>
+                    <button id='Restart_Button1' class='rstrtbtn' onclick="StartPlay()">Next Level</button>
+                </li>
+                <li>
+                    <button id='Options_Button' class='optbtn' onclick="Options()">Options</button>
+                </li>
+            </ul>
+        </nav>
+        <nav id='Replay_Menu'>
+            <ul>
+                <li>
+                    <button id='Restart_Button2' class='rstrtbtn' onclick="StartPlay()">Replay</button>
+                    
+                </li>
+                <li>
+                    <button id='Options_Button' class='optbtn' onclick="Options()">Options</button>
+                </li>
+            </ul>
+        </nav>
+        <div id='sound_div' class=sound-menu>
+            <button id='Sound_On' class='soundbtn' onclick="soundOn()">Sound</button>
+            <h2 id='soundon' hidden>false</h2>
+        </div>
+        <div id='score_div' class=score-menu>
+            <p>score</p>
+            <h2 id='score'>0</h2>
+        </div>
+        <div id='lose_div' class=lose-menu>
+            <p>LEVEL</p>
+            <p id='level'>0</p>
+            <p>NOT PASSED</p>
+        </div>
+        <div id='win_div' class=win-menu>
+            <p>Level</p>
+            <p id='levelwin'>0</p>
+            <p>completed</p>
+        </div>
+        <div id='end_div' class=end-menu>
+            <p>Credits: Davide Palleschi</p>
+        </div>
+        <div id='instructions_div' class=instructions-content>
+            <p><b>CONTROLS:</b></p>
+            <p>W: Move forward</p>
+            <p>S: Move backward</p>
+            <p>A: Move leftward</p>
+            <p>D: Move rightward</p>
+            <p><b>GAME:</b></p>
+            <p>- The object of the game is to be able to finish the maze with the highest possible score.</p>
+            <p>- The score increases as you move while it decreases as you touch the glowing cubes </p>
+            <p>- The game has 9 different levels and to win one you have to finish it with a positive score</p>
+        </div>
+        <div id='options_div' class=instructions-content>
+            <p><b>OPTIONS:</b></p>
+            <p>Difficulty:</p>
+            <p>Easy : The cubes move slowly and do not take away many points (Easy peasy)</p>
+            <p>Medium : The cubes begin to reach you quickly and start to hurt (Be careful)</p>
+            <p>Hard : The cubes are very fast and take away a lot of points (You have to run)</p>
+                <button id='EasyDif'>Easy</button>
+                <button id='MediumDif'>Medium</button>
+                <button id='HardDif'>Hard</button>
+            
+            
+            <p>Light Conditions:</p>
+            <span>
+                <button id='DayCon'>Day</button>
+                <button id='NightCon'>Night</button>
+            </span>
+            <p>Play a specific level:</p>
+            <span>
+                <button id='Level1'>Level 1</button>
+                <button id='Level2'>Level 2</button>
+                <button id='Level3'>Level 3</button>
+                <button id='Level4'>Level 4</button>
+                <button id='Level5'>Level 5</button>
+                <button id='Level6'>Level 6</button>
+                <button id='Level7'>Level 7</button>
+                <button id='Level8'>Level 8</button>
+                <button id='Level9'>Level 9</button>
+                <button id='Level10'>Bonus</button>
+            </span>
+        </div>
+        <script>
+            function StartPlay() {
+                document.getElementById("Start_Menu").style.display = 'none';
+                document.getElementById("NextLevel_Menu").style.display = 'none';
+                document.getElementById("Replay_Menu").style.display = 'none';
+                document.getElementById("options_div").classList.remove("show");
+                document.getElementById("instructions_div").classList.remove("show");
+                }
+        </script>
+        <script>
+            function RestartPlay() {
+                document.getElementById("End_Menu").style.display = 'none';
+            }
+        </script>
+        <script>
+            function Instructions() {
+                document.getElementById("options_div").classList.remove("show");
+                document.getElementById("instructions_div").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.instrbtn')) {
+                    var instructions = document.getElementsByClassName("instructions-content");
+                    var i;
+                    for (i = 0; i < instructions.length; i++) {
+                        var openInstructions = instructions[i];
+                        if (openInstructions.classList.contains('show')) {
+                            openInstructions.classList.remove('show');
+                        }
+                    }
+                }
+            } 
+        </script>
+        <script>
+            function Options() {
+                document.getElementById("instructions_div").classList.remove("show");
+                document.getElementById("options_div").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+                if (!event.target.matches('.optbtn')) {
+                    var instructions = document.getElementsByClassName("options-content");
+                    var i;
+                    for (i = 0; i < instructions.length; i++) {
+                        var openInstructions = instructions[i];
+                        if (openInstructions.classList.contains('show')) {
+                            openInstructions.classList.remove('show');
+                        }
+                    }
+                }
+            } 
+        </script>
+    </body>
+    <script>
+        const soundPlayer = new Audio('./sounds/Forest_Temple.mp3');
+        soundPlayer.play;
+        soundPlayer.loop = true;
+    </script>
+    <script>
+        function soundOn() {
+            const soundon = document.getElementById("soundon").innerHTML;
+            if (soundon == 'false') {
+                document.getElementById("soundon").innerHTML = 'true';
+                soundPlayer.play();
+            }
+            else {
+                document.getElementById("soundon").innerHTML = 'false';
+                soundPlayer.pause();
+                soundPlayer.currentTime = 0;
+            }
+        }
+    </script>
+    <script>
+        document.getElementById("End_Menu").style.display = 'none';
+        document.getElementById("NextLevel_Menu").style.display = 'none';
+        document.getElementById("Replay_Menu").style.display = 'none';
+        document.getElementById("lose_div").style.display = 'none';
+        document.getElementById("win_div").style.display = 'none';
+        document.getElementById("end_div").style.display = 'none';
+    </script>
+    <script src="./js/game.js" type="module"></script>
+    <script src="./js/initialization.js" type="module"></script>
+    <script src="./js/definitions.js" type="module"></script>
+    <script src="./js/utilities.js" type="module"></script>
+    <script src="./js/draw.js" type="module"></script>
+    
+    <script src="./js/main.js" type="module"></script>
+
+</html>
